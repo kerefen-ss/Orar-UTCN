@@ -124,7 +124,7 @@ button:hover {
 
 /* Design responsive pentru iPhone 14 Pro */
 
-/* Ajustări pentru dispozitive mobile cu lățime de maxim 1200px */
+/* Ajustări pentru dispozitive mobile cu lățimea de maxim 1200px */
 @media (max-width: 1200px) {
     h1 {
         font-size: 2.2rem;
@@ -180,6 +180,8 @@ button:hover {
     .legend {
         font-size: 0.9rem;
         padding: 15px;
+        max-width: 90%; /* Asigură-te că legenda nu iese din chenar */
+        margin: 0 auto; /* Centrează legenda */
     }
 
     .legend p {
@@ -189,6 +191,8 @@ button:hover {
     button {
         font-size: 1.1rem;
         padding: 12px 18px;
+        max-width: 90%; /* Asigură-te că butonul nu iese din chenar */
+        margin: 20px auto; /* Centrează butonul */
     }
 }
 
@@ -214,6 +218,8 @@ button:hover {
     .legend {
         font-size: 0.8rem;
         padding: 10px;
+        max-width: 90%; /* Asigură-te că legenda nu iese din chenar */
+        margin: 0 auto; /* Centrează legenda */
     }
 
     .legend p {
@@ -223,5 +229,15 @@ button:hover {
     button {
         font-size: 1rem;
         padding: 10px 16px;
+    }
+}
+
+/* Ajustări pentru orar */
+@media (max-width: 768px) {
+    .orar {
+        font-size: 1.5rem; /* Ajustează mărimea fontului */
+        max-width: 90%; /* Asigură-te că orarul nu iese din chenar */
+        margin: 0 auto; /* Centrează orarul */
+        padding: 0 10px; /* Adaugă padding pentru a crea spațiu pe margini */
     }
 }
