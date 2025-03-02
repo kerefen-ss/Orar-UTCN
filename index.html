@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#007bff">
+    <title>Orarul Meu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Orarul Meu</h1>
+        <p id="week-info"></p> <!-- Aici va apărea săptămâna activă -->
+        
+        <!-- Tabelul orarului -->
+        <table id="orar">
+            <thead>
+                <tr>
+                    <th>Ora</th>
+                    <th>Luni</th>
+                    <th>Marți</th>
+                    <th>Miercuri</th>
+                    <th>Joi</th>
+                    <th>Vineri</th>
+                </tr>
+            </thead>
+            <tbody id="orar-body"> <!-- Aici vor fi inserate rândurile de către JavaScript -->
+            </tbody>
+        </table>
+
+        <!-- Legendă -->
+        <div class="legend">
+            <h3>Legendă</h3>
+            <p>TRD - Traductoare</p>
+            <p>ME I - Mașini Electrice</p>
+            <p>TSRA - Teoria Sistemelor și Reglare Automată</p>
+            <p>UE - Unde Electromagnetice</p>
+            <p>M - Mecanisme</p>
+            <p>RM - Rezistența Materialelor</p>
+            <p>SD - Sisteme Digitale</p>
+            <p>EG - Ergonomie</p>
+            <p>FR - Franceza</p>
+        </div>
+
+        <button id="toggle-week">Schimbă săptămâna</button>
+       
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
