@@ -13,19 +13,25 @@ body {
     padding: 20px;
     transition: background-color 0.3s, color 0.3s;
     overflow-x: hidden; /* Împiedică derularea orizontală pe mobile */
+    display: flex;
+    justify-content: center; /* Centrează conținutul */
+    align-items: center; /* Centrează vertical */
+    height: 100vh;
 }
 
 /* Container principal pentru conținut */
 .container {
-    max-width: 100%; /* Permite containerului să ocupe întreaga lățime disponibilă */
-    margin: 0 auto;
-    padding: 20px;
     width: 100%;
+    max-width: 1200px; /* Lățime maximă pentru desktopuri mari */
+    padding: 20px;
+    background-color: #1d1d1d; /* Fundal mai închis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Efect de umbră pentru un efect 3D */
+    border-radius: 8px;
+    text-align: center; /* Centrăm textul în container */
 }
 
 /* Stiluri pentru titlu */
 h1 {
-    text-align: center;
     font-size: 2.5rem; /* Font mai mare pentru vizibilitate pe mobil */
     color: #b93d3d; /* Bordo */
     margin-bottom: 20px;
@@ -35,8 +41,7 @@ h1 {
 
 /* Stiluri pentru săptămâna activă */
 #week-info {
-    text-align: center;
-    font-size: 1.1rem; /* Font mai mare */
+    font-size: 1.1rem;
     color: #b93d3d; /* Bordo */
     margin-bottom: 20px;
 }
@@ -46,6 +51,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    text-align: center; /* Alinierea textului în tabel */
 }
 
 /* Stiluri pentru antetul tabelului */
@@ -53,7 +59,7 @@ table th {
     background-color: #2a2a2a; /* Gri închis pentru antet */
     color: #fff; /* Text alb */
     padding: 15px;
-    font-size: 1rem; /* Font ușor mai mic pentru titluri */
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
@@ -64,7 +70,6 @@ table td {
     color: #ccc; /* Text deschis */
     padding: 12px;
     font-size: 1rem;
-    text-align: center;
 }
 
 table td:hover {
@@ -79,21 +84,22 @@ table tr:nth-child(even) td {
 /* Legendă - Stiluri pentru chenarul legendei */
 .legend {
     background-color: #2a2a2a; /* Gri închis pentru fundalul legendei */
-    border-radius: 8px; /* Colțuri rotunjite */
+    border-radius: 8px;
     padding: 20px;
     margin-top: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Efect de umbră pentru un efect 3D */
+    text-align: left;
 }
 
 legend {
     font-size: 1.2rem;
-    color: #b93d3d; /* Bordo */
+    color: #b93d3d;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
 
 legend p {
-    color: #ccc; /* Text deschis */
+    color: #ccc;
     font-size: 1rem;
     margin-bottom: 10px;
 }
